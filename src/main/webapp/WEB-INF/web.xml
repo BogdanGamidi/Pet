@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>GetServlet</servlet-name>
+    <servlet-class>servlets.users.GetServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetServlet</servlet-name>
+    <url-pattern>/getServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetSomeServlet</servlet-name>
+    <servlet-class>servlets.users.GetSomeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetSomeServlet</servlet-name>
+    <url-pattern>/getSomeServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- <servlet>
+     <servlet-name>InsertServlet</servlet-name>
+     <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+     <jsp-file>/jspfiles/crudusers/insertUser.jsp</jsp-file>
+   </servlet>
+
+   <servlet-mapping>
+     <servlet-name>InsertServlet</servlet-name>
+     <url-pattern>/insertServlet</url-pattern>
+   </servlet-mapping> -->
+
+  <servlet>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <servlet-class>servlets.users.UpdatePassword</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <url-pattern>/updatePassword</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteSomeUserServlet</servlet-name>
+    <servlet-class>servlets.users.DeleteSomeUser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteSomeUserServlet</servlet-name>
+    <url-pattern>/deleteSomeUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteAllUserServlet</servlet-name>
+    <servlet-class>servlets.users.DeleteAllUsers</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteAllUserServlet</servlet-name>
+    <url-pattern>/deleteAllUsers</url-pattern>
+  </servlet-mapping>
+</web-app>
