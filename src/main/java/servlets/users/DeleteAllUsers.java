@@ -28,6 +28,5 @@ public class DeleteAllUsers extends HttpServlet {
         } finally {
             writer.close();
         }
-
     }
 }
